@@ -20,7 +20,12 @@ class Employee{
             name=aName;
         }
         void setCompany (string aCompany){
-            company=aCompany;
+            if (aCompany=="whsmith"){
+                company=aCompany;
+            }
+            else{
+                company="mid workplace";
+            }
         }
         void setAge (int aAge){
             Age=aAge;
@@ -45,7 +50,7 @@ int main(){
     Employee one;
 
     one.setName("alex");
-    one.setCompany("whsmith");
+    one.setCompany("wsmith");
     one.setAge(18);
 
     std::cout<<one.getName()<<", "<<one.getCompany()<<", "<<one.getAge()<<std::endl;
