@@ -1,12 +1,12 @@
 
 #include <iostream>
 
-using namespace std;
+using std::string;
 
 
 class Player {
    virtual char makeMove ()=0{
-        virtual std:: string getName(Aname)
+        
    }
 };
 
