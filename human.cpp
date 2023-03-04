@@ -1,12 +1,16 @@
 #include <iostream>
+#include "player.h"
 #include "human.h"
 using namespace std;
 
 class Human {
     private:
-        char move;
         string name;
     public:
-        void getMove(char Amove);
-        void getName (string Aname);
+        void setName (string aName){
+            name=aName;
+        };
+        string getName (){
+            return name;
+        }
 };
