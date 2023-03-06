@@ -1,27 +1,12 @@
 #include <iostream>
-#include "player.h"
-#include "human.h"
+
+#include "Human.h"
+
 using namespace std;
 
-class Human : private Player{
-    private:
-        string name;
-    public:
-        Human (){
-            name="human";
-        }
-        Human (string aName){
-            name=aName;
-        }
 
-        void setName (string aName){
-            name=aName;
-        };
-        string getName (){
-            return name;
-        }
-
-        char makeMove (string choice);
-
-
-};
+        Human::Human (){this->humanName="Human";}
+        Human::Human(string name){this->humanName=name;}
+        void Human::makeMove(){cout<<"\nEnter in a move: ";cin>>humanMove;}
+        char Human::returnMove(){return humanMove;}
+        string Human::getName(){return humanName;}
