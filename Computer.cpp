@@ -1,19 +1,11 @@
-#ifndef COMPUTER_H
-#define COMPUTER_H
+#include <iostream>
 
 #include "Computer.h"
 
-#include <string>
+using namespace std;
 
-class Computer : public Player{
-    private:
-        char compMove;
-        std::string compName;
-    public:
-        Computer ();
-        void makeMove();
-        std::string getName();
-        char returnMove();
-};
 
-#endif
+        Computer::Computer (){this->compName="Computer";}
+        void Computer::makeMove(){this->compMove='R';}
+        string Computer::getName(){return compName;}
+        char Computer::returnMove(){return compMove;}
