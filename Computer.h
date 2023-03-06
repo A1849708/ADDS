@@ -11,7 +11,7 @@ class Computer : public Player{
         std::string compName;
     public:
         Computer ();
-        char makeMove();
+        void makeMove();
         std::string getName();
         char returnMove();
 };

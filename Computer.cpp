@@ -1,7 +1,7 @@
 #ifndef COMPUTER_H
 #define COMPUTER_H
 
-#include "Player.h"
+#include "Computer.h"
 
 #include <string>
 
@@ -11,7 +11,7 @@ class Computer : public Player{
         std::string compName;
     public:
         Computer ();
-        char makeMove();
+        void makeMove();
         std::string getName();
         char returnMove();
 };

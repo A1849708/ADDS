@@ -5,6 +5,6 @@
 using namespace std;
 
 class Player {
-   char Player::makeMove(){};
+   void Player::makeMove(){};
    string Player::getName(){};
 };
