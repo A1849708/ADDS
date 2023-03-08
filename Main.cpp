@@ -8,7 +8,7 @@ using namespace std;
 
 int main (){
     Player* theComputer = new Computer;
-    Player* theHuman = new Human;
+    Player* theHuman = new Human ("alex");
     Player* winner;
 
     Referee* theReferee = new Referee;
