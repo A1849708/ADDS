@@ -1,11 +1,11 @@
 #ifndef MOVE_H
 #define MOVE_H
+#include <string>
 
 class Move{
-    private:
-        std::string move;
     public:
-        Move makeMove();
-}
+        virtual bool winsAgainst (Move* move);
+        virtual std::string getName ();
+};
 
 #endif
